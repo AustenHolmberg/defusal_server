@@ -1,0 +1,41 @@
+<html style="margin:0px;padding:0px;overflow:hidden">
+  <head>
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body style="margin:0px;padding:0px;overflow:hidden">
+<div class="container" style="margin-top: 8vh">
+  <h1 id="headline" style="font-size: 50px">Plant the bomb</h1>
+  <div>
+    <ul>
+      <li id="seconds-li" style="display: none; color: #d20000"><span id="seconds"></span>Seconds</li>
+      <li id="btn-li" style="width: 100%"><a id="btn" data-role="button" style="width: 70%; height: 80px; font-size: 30px; margin: 0 auto">PLANT</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="defuse-wrapper" class="container" style="margin-top: 2vh; display: none">
+  <div class="holder bot-left top-left">
+    <div id="defusing">
+      <div id="status-graphic" class="circle defuse" style="display: none">
+        <img id="status-img" src="https://i.imgur.com/RLHK8L9.png" alt=""/>
+      </div>
+      <div class="text">
+        <p class="def-text">Defuse time:</p>
+        <div id="progress-bar"></div>
+        <h2 id="countdown">00:10</h2>
+        <p id="status">You are defusing the bomb.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+  
+<audio id="player1" preload="auto" src="planted.mp3"></audio>
+<audio id="player2" preload="auto" src="defused.mp3"></audio>
+<audio id="player3" preload="auto" src="explosion.mp3"></audio>
+<audio id="player4" preload="auto" src="planting.mp3"></audio>
+  
+</html>
